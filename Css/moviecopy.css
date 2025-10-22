@@ -1,0 +1,170 @@
+  body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      height: 100vh;
+      background: #000;
+    }
+    .banner {
+      position: relative;
+      margin-top: 50px;
+      width: 100%;
+      height: 100vh;
+      /* background: url("../Image/movie12.jpg") no-repeat center/cover; */
+      
+      display: flex;
+      align-items: center;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+    .banner-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+    }
+    .content {
+      position: relative;
+      max-width: 600px;
+      z-index: 1;
+    }
+    .content h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .meta {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+    .desc {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 8px;
+      background: #00AEEF;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0077aa;
+    }
+    video {
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+     /* --- Reset & Base --- */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:#05060b;color:#eaf0f6;line-height:1.4}
+
+    :root{
+      --accent:#d4af37;
+      --muted:rgba(234,240,246,0.65);
+      --card:#0b0f16;
+      --glass:rgba(255,255,255,0.03);
+      --max-width:1200px;
+    }
+    a{
+       text-decoration: none;
+       color:white;
+    }
+
+    .pp{max-width:var(--max-width);margin:28px auto;padding:20px}
+
+    header{display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#111827,#081025);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent)}
+    nav{display:flex;gap:14px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
+    nav a:hover{color:#fff;background:rgba(255,255,255,0.05)}
+
+    .actions{display:flex;gap:10px}
+    .search{background:var(--glass);padding:8px 10px;border-radius:10px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);cursor:pointer;font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#ffc966);color:#071121;border:none}
+#moviePlayer {
+    display: none; /* hidden until "WATCH NOW" is clicked */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cov6ers whole screen */
+    background: black;
+}
+
+    /* dropdown */
+    /* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  min-width: 160px;
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 12px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+ .line {
+    text-decoration: line-through; /* This adds the straight line */
+    color: #ec6565;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Footer */
+    footer{margin-top:28px;padding:20px;background:rgba(255,255,255,0.02);display:flex;justify-content:space-between}
+    .social{display:flex;gap:10px}
+
+    /* Responsive */
+    @media(max-width:720px){
+      .hero{grid-template-columns:1fr}
+      nav{display:none}
+      .hero-poster{height:160px}
+    }
+        .more {
+  grid-column: 1 / -1; /* span full width in grid */
+  text-align: center;
+  padding: 12px 20px;
+  margin: 15px auto;
+  background: var(--accent, gold);
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.more:hover {
+  background: #b99720;
+}
