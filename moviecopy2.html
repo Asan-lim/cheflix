@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CheapFlix</title>
+  <link rel="stylesheet" href="../Css/moviecopy.css">
+  <!-- <script src="../javascript/Nowplaying.js"></script> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="description" content="Static homepage prototype inspired by Elementor Multi Cinema demo. Dark cinematic theme with gold accents and interactive star ratings." />
+</head>
+<body>
+  <div class="pp">
+    <header>
+      <div class="brand">
+        <div class="logo">CF</div>
+        <div>
+          <div style="font-weight:800">CheapFlix</div>
+          <div class="muted" style="font-size:13px">Movie Web</div>
+        </div>
+      </div>
+      <nav>
+        <a href="indexcopy.html">Home</a>
+    <div class="dropdown">
+      <a href="#">Movies ▾</a>
+       <div class="dropdown-content">
+       <a href="Nowplayingcopy.html">Now Playing</a>
+        <div class="line"><a href="#coming-soon">Coming Soon</a></div>
+       </div>
+      </div>
+        <a href="#">Top Rated</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="actions">
+        <div class="search">🔍 <input placeholder="Search" style="background:transparent;border:none;color:inherit;outline:none;width:120px"/></div>
+        <button class="btn">Sign in</button>
+        <button class="btn primary"><a href="sub.html">Subscribe</a></button>
+      </div>
+    </header>
+
+  <div class="banner"  style="background-image: url(../Image/movie15.webp); background-position: center; background-repeat: no-repeat;">
+    <div class="banner-overlay"></div>
+    <div class="content">
+      <h1>Secret of the Wings</h1>
+      <div class="meta">Film · 2h 32m</div>
+      <p class="desc">
+        Originally published on April 5, 2016, by Peter Brown, The Wild Robot follows Roz (ROZZUM unit 7134), a robot who awakens alone on a deserted island after a shipwreck. 
+      </p>
+
+<a href="#moviePlayer" class="btn" onclick="openMovie()">▶ WATCH NOW</a>
+<a href="../movie/Secret.Of.The.Wings.2012.720p.BluRay.x264.600MB -Vegamovies.is.mkv" class="btn" download>⬇ DOWNLOAD</a>
+
+<!-- Fullscreen video player -->
+<video id="moviePlayer" controls>
+  <source src="../movie/Secret.Of.The.Wings.2012.720p.BluRay.x264.600MB -Vegamovies.is.mkv" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+      <!-- DOWNLOAD OPTION -->
+
+    
+    </div>
+  </div>
+  <!-- CTA -->
+    <div class="cta" style="margin-top:18px;padding:18px;background:rgba(212,175,55,0.1);border-radius:10px;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <div style="font-weight:800">Join CineClub — early access & exclusives</div>
+        <div class="muted" style="margin-top:6px">Subscribe for new releases & behind-the-scenes</div>
+      </div>
+      <div>
+        <a href="#" class="btn">Learn More</a>
+        <a href="#" class="btn primary">Join Now</a>
+      </div>
+    </div>
+
+     <!-- Footer -->
+   <footer>
+  <div>
+    <div style="font-weight:800">CheapFlix</div>
+    <div class="muted" style="margin-top:6px">
+      © 2025 CheapFlix — All rights reserved
+    </div>
+  </div>
+
+  <div class="social">
+    <a class="muted" href="https://x.com/i/flow/login">
+      <i class="fab fa-twitter"></i>
+      <div>Twitter</div>
+    </a>
+    <a class="muted" href="https://www.instagram.com/">
+      <i class="fab fa-instagram"></i>
+      <div>Instagram</div>
+    </a>
+    <a class="muted" href="https://www.youtube.com/">
+      <i class="fab fa-youtube"></i>
+      <div>YouTube</div>
+    </a>
+  </div>
+</footer>
+</body>
+</html>
+
+<script>
+  function openMovie() {
+    let video = document.getElementById("moviePlayer");
+
+    // Show video in fullscreen mode
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) { // Safari
+      video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) { // IE/Edge
+      video.msRequestFullscreen();
+    }
+
+    video.style.display = "block";
+    video.play();
+  }
+</script>
