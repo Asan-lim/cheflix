@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chef Flix - Subscription</title>
-    <link rel="stylesheet" href="../Css/subscription.css">
-</head>
+    <link rel="stylesheet" href="Css/subscription.css">
+
 <body>
   <div class="container">
     <h1>Start streaming today</h1>
@@ -72,3 +72,4 @@
 
 </body>
 </html>
+
